@@ -1,6 +1,12 @@
+.ml-20 {
+    margin-left: 20px;
+}
+
 .random-planet {
+    margin-bottom: 20px;
     display: flex;
     padding: 1rem;
+    background-color: #303030;
 }
 
 .random-planet .planet-image {
