@@ -38,8 +38,10 @@ export default class SwapiService {
   }
   
   const swapi = new SwapiService();
-  swapi.getPerson(3).then(people => console.log(people.name));
-  swapi.getAllPeople().then(body => console.log(body));
+  
+  swapi.getAllPeople().then(body => console.log('getAllPeople',body));
+  swapi.getAllPlanets().then(body => console.log('getAllPlanets',body));
+  swapi.getAllStarships().then(body => console.log('getAllStarships',body));
   
   
   
