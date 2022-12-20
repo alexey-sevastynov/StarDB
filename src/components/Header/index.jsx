@@ -5,12 +5,20 @@ import './header.css';
 
 function Header() {
     return (
-        <div className='header'>
-            <div>Star DB</div>
-            <ul>
-                <li>People</li>
-                <li>Planets</li>
-                <li>Starships</li>
+        <div className='header d-flex'>
+            <h3>
+                <a href="#">Star DB</a>
+            </h3>
+            <ul className='d-flex'>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Planets</a>
+                </li>
+                <li>
+                    <a href="#">Starships</a>
+                </li>
             </ul>
         </div>
     );

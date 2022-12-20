@@ -3,13 +3,6 @@
     padding-top: 10px;
 }
 
-.header {
-    display: flex;
-}
-
-.header ul {
-    display: flex;
-}
 
 .header ul li {
     list-style: none;
