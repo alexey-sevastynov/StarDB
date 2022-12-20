@@ -1,8 +1,10 @@
 .person-details .list-group-item {
-    display: flex;
     margin-top: 1rem;
-    flex-direction: row;
     padding: 1rem;
+}
+
+.card {
+    flex-direction: row;
 }
 
 .person-details .person-image {
