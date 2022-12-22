@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 //client Api
 import SwapiService from '../../services'
+import Spinner from '../spinner/Spinner';
 
 //styles 
 import './randomPlanet.css';
@@ -22,7 +23,7 @@ export default class RandomPlanet extends Component {
 
     onPlanetLoaded = (planet) => {
         this.setState({ planet });
-    }; 
+    };
 
     updatePlanet() {
         const id = Math.floor(Math.random() * 25 + 2);
@@ -36,11 +37,14 @@ export default class RandomPlanet extends Component {
 
     render() {
 
-        const { planet: { id , name, population, rotationPeriod, diameter } } = this.state;
+        const { planet: { id, name, population, rotationPeriod, diameter } } = this.state;
 
         return (
+
+
             <div className='random-planet jumbotron rounded'>
-                <img
+                <Spinner />
+                {/* <img
                     className='planet-image'
                     src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}
                     alt="img" />
@@ -60,7 +64,7 @@ export default class RandomPlanet extends Component {
                             <span className='ml-20'>{diameter}</span>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         );
     };
